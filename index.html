@@ -15,13 +15,36 @@
     <title>Coffee</title>
   </head>
   <body>
+    <div class="mobile-menu-wrapper none" id="mobile-menu-wrapper">
+      <div class="mobile-logo-text-mob">
+        <div class="mobile-logo-title-mob">
+          <img class="rocket-logo" src="./assets/rocket-logo.png" alt="" />
+        </div>
+
+        <img
+          class="menu-buguer-open mobile-menu"
+          id="menu-buguer-open"
+          onclick="mobileMenu()"
+          src="./assets/menu-buguer-close.svg"
+          alt=""
+        />
+      </div>
+      <ul>
+        <hr size="4" />
+        <li class="mob-item">Home</li>
+        <hr size="4" />
+        <li class="mob-item">Menu</li>
+        <hr size="4" />
+        <li class="mob-item">Recompensas</li>
+        <hr size="4" />
+        <li class="mob-item">GiftCards</li>
+        <hr size="4" />
+        <li class="mob-item">Lojas</li>
+        <hr size="4" />
+      </ul>
+    </div>
     <header class="cabecalho">
-      <img
-        class="logo-mobile"
-        src="assets/blur-mobile.png"
-        style="display: none"
-        alt=""
-      />
+      <img class="logo-mobile" src="assets/logo-mobile.svg" alt="" />
       <img class="logo-desktop" src="assets/logo-desktop.svg" alt="" />
       <ul class="lista">
         <li class="item">Home</li>
@@ -33,7 +56,8 @@
       <img
         class="burguer"
         src="assets/menu-buguer-open.svg"
-        style="display: none"
+        onclick="mobileMenu()"
+        id="burguer"
         alt=""
       />
       <button class="button-1">Pegar meu café</button>
@@ -47,5 +71,6 @@
       </div>
       <img class="blur-2" src="assets/blur-1.png" alt="" />
     </main>
+    <script src="scripty.js"></script>
   </body>
 </html>
